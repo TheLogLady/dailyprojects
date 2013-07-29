@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text Styles</title>
+<style type="text/css">
+
+p {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p:first-child:hover {
+  font-size: 200%;
+}
+
+p:last-child {
+  color: red;
+  text-shadow: 1px 1px 5px #6a6a6a;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+</style>
+</head>
+
+<body>
+  <p>
+    This text is bold and underlined; The default style I assigned for all paragraphs. When you hover over this paragraph, the font size increases to twice the size of what it was due to the ':hover' pseudo class.
+  </p>
+  <p>
+    This text is red with a dropshadow because I assigned it different values using the ':last-child' pseudo class.
+  </p> 
+</body>
+
+</html>
