@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href='http://fonts.googleapis.com/css?family=Rum+Raisin' rel='stylesheet' type='text/css'>
+<title>Multiple Backgrounds</title>
+<style type="text/css">
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    background-image: url("mountains-front.png"), url("mountains-middle.png"), url("mountains-back.png"), url("cloud-one.png"), url("cloud-2.png");
+    background-repeat: repeat-x, repeat-x, repeat-x, no-repeat, no-repeat;
+    background-position: 70% bottom, 30% bottom, 10% bottom, 10% 70px, 95% 80px;
+    background-size: auto, auto, auto, 400px, 450px;
+  }
+  
+  p {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Rum Raisin', sans-serif;
+    color: red;
+  }
+  
+</style>
+</head>
+
+<body>
+  <p>
+     { Resize your browser window to move mountains }
+  </p>
+  
+</body>  
+</html>
