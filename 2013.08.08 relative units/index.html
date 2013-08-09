@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Relative Units of Measurement</title>
+<style type="text/css">
+  
+  #one {
+    background-color: #abf9ab;
+    width: 50em;
+  }
+  
+  #two {
+    background-color: #40ab40;
+    width: 20rem;
+    font-size: 2em;
+  }
+  
+  #three {
+    background-color: #d6d8d9;
+    height: 25vh;
+  }
+  
+  #four {
+    background-color: #3c5a49;
+    width: 44vw;
+  }
+  
+</style>  
+
+</head>
+<body>
+  <div id="one">This is div one. Its width is 50em, which translates to 800 pixels because the browser's default font size is 16 pixels (16 x 50=800)</div>
+  <div id="two">Div two has been assigned a font size of 2em, meaning it is equal to 32 pixels since the browser's default is 16 pixels. Having assigned a new font size to this div, using em as a length unit will now be relative to the new font size. To avoid this if unwanted, we use rem. Rem redirects back to the original font size specified for the html(aka root element). I have set a width of 20rem to this div, meaning it will be equal to 320 pixels (16 x 20=320)</div>
+  <div id="three">For div three I used vh to assign a height. vh equals 1/100th of the viewport, so I gave it a height of 25vh or 25/100 aka 25% of the height of the viewport. When resizing the browser window, this div will always take up 25% of the height of the window. Warning: vh has several bugs</div>
+  <div id="four">Div four's width has been set using vw which operates exactly like vh except it pertains to viewport width. This div is set to 44vw so it will always be 44% of the browser window's width.</div>
+</body>
+  
+</html>
